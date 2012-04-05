@@ -36,13 +36,12 @@ public class Kopierer {
 		
 	}
 	
-	/*
+	/**
 	 * Behandlung des Ereignisses: keine Taste gedrückt
-	 */
-	
+	 */	
 	public void keineEingabe()
 	{
-		//Wenn aktueller state nicht ausgeschaltet ist, dann Wechsel in Engergie_sparen
+		// Wenn aktueller state nicht ausgeschaltet ist, dann Wechsel in Engergie_sparen
 		if(!(state == ausgeschaltet))
 		{
 			state = energie_sparen;

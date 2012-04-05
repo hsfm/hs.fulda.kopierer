@@ -11,6 +11,7 @@ public class Kopierer
 		state = new AusState();						
 	}
 	
+	// erwartet csv-liste mit befehlen 
 	public void setEingabesymbol(String input)
 	{
 		eingabesymbol = input.split("[,]");		

@@ -1,3 +1,7 @@
+/**
+ * kopierer.state_pattern enthält nur die ursprüngliche Implementierung!
+ * Die aktuelle Version ist kopierer.state_pattern.energie_sparen!
+ */
 package kopierer.state_pattern;
 
 public class Kopierer 

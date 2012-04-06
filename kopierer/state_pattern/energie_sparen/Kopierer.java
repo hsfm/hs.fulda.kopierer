@@ -10,15 +10,11 @@ public class Kopierer
 	{
 		state = new AusState();						
 	}
-	
-	// erwartet csv-liste mit befehlen 
-	public void setEingabesymbol(String input)
+	 
+	// erwartet csv-liste mit befehlen	
+	public void start(String input)
 	{
-		eingabesymbol = input.split("[,]");		
-	}
-	
-	public void start()
-	{
+		eingabesymbol = input.split("[,]");
 		// Wenn im Energiesparmodus dann hole letzten Zustand vor betreten des ESM
 		if(state instanceof EnergieSparState)
 		{
@@ -67,9 +63,7 @@ public class Kopierer
 	public static void main(String[] args)
 	{
 		Kopierer k = new Kopierer();
-		k.setEingabesymbol("einaus,kopie,reset");
-		k.start();
-		k.setEingabesymbol("einaus,kopie,reset,einaus");
-		k.start();
+		k.start("einaus,kopie,reset");		
+		k.start("einaus,kopie,reset,einaus");
 	}
 }

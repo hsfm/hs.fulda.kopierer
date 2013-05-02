@@ -1,0 +1,2 @@
+hs.fulda.kopierer
+=================
